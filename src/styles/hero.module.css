@@ -1,0 +1,61 @@
+.heroContainer {
+  padding: 5rem;
+  background: #f9f9f9;
+  height: 100vh; /* Altura completa de la pantalla */
+  display: flex;
+  align-items: center; /* Centra todo verticalmente */
+}
+
+.heroContentWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* ⬅️ Esto asegura el centrado vertical del contenido interno */
+  width: 100%;
+}
+
+.heroText {
+  flex: 1;
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.heroImageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImageContainer > div {
+  max-width: 400px;
+  width: 100%;
+}
+
+.gradientOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255));
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .heroContentWrapper {
+    flex-direction: column-reverse; /* ⬅️ primero la imagen, luego el texto */
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroText {
+    text-align: center;
+    margin-bottom: 2rem; /* separa del contenido de abajo */
+  }
+
+  .heroImageContainer > div {
+    max-width: 300px;
+  }
+}
+
