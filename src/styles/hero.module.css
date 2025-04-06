@@ -4,6 +4,7 @@
   height: 100vh; /* Altura completa de la pantalla */
   display: flex;
   align-items: center; /* Centra todo verticalmente */
+  justify-content: center; /* Centra todo horizontalmente */
 }
 
 .heroContentWrapper {
@@ -11,13 +12,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center; /* ⬅️ Esto asegura el centrado vertical del contenido interno */
+  justify-content: center;
   width: 100%;
 }
 
 .heroText {
   flex: 1;
   color: rgb(0, 0, 0);
-  text-align: left;
+  text-align: center;
 }
 
 .heroImageContainer {
