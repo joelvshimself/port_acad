@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useId } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
@@ -19,7 +19,6 @@ export function ContainerTextFlip({
   textClassName,
   animationDuration = 700,
 }: ContainerTextFlipProps) {
-  const id = useId();
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [width, setWidth] = useState(100);
   const textRef = React.useRef<HTMLDivElement>(null);

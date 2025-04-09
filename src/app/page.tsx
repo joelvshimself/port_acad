@@ -2,7 +2,6 @@ import Navbar from "@/components/navbar";
 import Hero from '@/components/Hero'; 
 import Mycovervisual from "@/components/mycovervisual";
 import { Treeditems } from "@/components/Treeditems";
-import Style from "@/styles/globals.module.css";
 import Footer from "@/components/footer";
 
 export const dynamic = 'force-dynamic'; // Force dynamic rendering
