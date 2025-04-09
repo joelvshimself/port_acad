@@ -17,7 +17,7 @@ const Orbit = () => {
           src="/fak.JPG"
           alt="Yo Mero"
           width={400}
-          height={500}
+          height={600}
           objectFit="cover"
           className={styles.centralImage}
           priority

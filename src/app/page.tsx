@@ -14,9 +14,10 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="servicios">
+      <section id="servicios" className="hidden sm:block">
         <Mycovervisual />
       </section>
+
 
       <section id="contacto">
         <Treeditems />
