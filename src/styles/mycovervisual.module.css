@@ -1,17 +1,18 @@
+
 .container {
     position: relative;
     width: 100%;
     height: 250vh;
     overflow: hidden;
     z-index: 1;
+    background: #f1f7f9;
 }
 
 .imageWrapper {
     position: absolute;
-    top: 25vh; /* centrado vertical en el primer 100vh */
-    left: 23%;
-    transform: 0;
-    width: 60vw;
+    top: 25vh;
+    right: 0%;
+    width: 110vw;
     height: 60vw;
     transform-origin: center center;
     will-change: transform;
@@ -20,4 +21,30 @@
 
 .heroImage {
     z-index: 1;
+}
+
+/* Posiciona los textos dentro del contenedor */
+.initialText, .finalText {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.initialText {
+    top: 55vh; /* Parte alta del componente */
+    right: 32vw;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgba(69, 69, 69, 0.8),
+                 0 0 20px rgba(59, 59, 59, 0.6),
+                 0 0 30px rgba(51, 51, 51, 0.4);
+}
+
+.finalText {
+    top: 200vh; /* Parte baja del componente */
+    color: rgb(1, 1, 1);
+
 }

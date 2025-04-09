@@ -1,6 +1,7 @@
+
 .heroContainer {
   padding: 5rem;
-  background: #f9f9f9;
+  background: #f1f7f9;
   height: 100vh; /* Altura completa de la pantalla */
   display: flex;
   align-items: center; /* Centra todo verticalmente */
@@ -11,7 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; /* ⬅️ Esto asegura el centrado vertical del contenido interno */
+  align-items: center; /* Esto asegura el centrado vertical del contenido interno */
   justify-content: center;
   width: 100%;
 }

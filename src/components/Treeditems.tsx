@@ -8,33 +8,36 @@ import Link from "next/link";
 const cards = [
   {
     title: "myCover app",
-    description: "Hover over this card to unleash the power of CSS perspective",
+    description: "The fastest and safest way to buy tickets for exclusive events.",
     image:
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "https://twitter.com/mannupaaji",
+      "/1.png",
+    link: "https://mycoverwebs.vercel.app",
   },
   {
     title: "Object Recognition",
     description: "Recognize objects in images with CoreML.",
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=2560&q=80&auto=format&fit=crop",
+      "/3.png",
     link: "https://www.youtube.com/watch?v=nJgFMIytBWI&t=4s",
   },
   {
     title: "Notes App",
     description: "A simple notes app built with SwiftUI.",
     image:
-      "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=2560&q=80&auto=format&fit=crop",
+      "/2.png",
     link: "https://www.youtube.com/watch?v=ApJ4mwJWhMM&t=613s",
   },
 ];
 
 export function Treeditems() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 section"
+      style={{ backgroundColor: "#f1f7f9" }}
+    >
       {cards.map((card, index) => (
         <CardContainer key={index} className="inter-var">
-          <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
+          <CardBody className="bg-gray-50  relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold text-neutral-600 dark:text-white"
