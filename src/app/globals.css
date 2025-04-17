@@ -13,11 +13,6 @@
 }
 
 
-  :root {
-    --foreground: #0a0a0a;
-    --background: #ededed;
-  }
-
 
 body {
   background: var(--background);
